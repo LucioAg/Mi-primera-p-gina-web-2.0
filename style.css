@@ -1,0 +1,49 @@
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    }
+    /* . Agregar estilos a la etiqueta <nav> para darle un estilo de lista y quitarle los
+    márgenes predeterminados. Puedes utilizar el siguiente código CSS */
+
+    nav ul {
+        list-style: none;
+        margin: 0%;
+        padding: 0%;
+    }
+
+
+    /*Agregar estilos a los elementos de lista <li> para hacer que se muestren en línea
+y se separen entre sí */
+    nav li {
+        display: inline-block;
+        margin-right: 20px;
+        }
+
+    /*Para agregar estilos a los enlaces <a>, color y un estilos al pasar el cursor por encima*/
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px;
+        }
+        nav a:hover {
+        color: #1BF7DE;
+        }
+        /* Esto cambia el color de fondo del encabezado a #333 en pantallas con un ancho
+máximo de 767 píxeles. */
+    @media (max-width: 767px) {
+        header {
+            background-color: coral;
+        }
+        /*Esto cambia el tamaño de fuente del texto de navegación a 16 píxeles en pantallas
+con un ancho máximo de 767 píxeles */
+        nav {
+            font-size: 16px;
+        }
+        /*Esto ajusta el ancho del encabezado a 1200 píxeles en pantallas con un ancho
+mínimo de 1200 píxeles*/
+        header {
+            width: 1200px;
+        }
+    }
